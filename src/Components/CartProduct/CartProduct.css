@@ -1,0 +1,44 @@
+.CartProduct {
+  width: 90%;
+  height: 12rem;
+  margin: auto;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  transition: background-color 0.5s ease-out;
+  padding: 1rem;
+}
+
+.CartProduct:hover {
+  background-color: rgb(211, 211, 211);
+}
+
+.CartProduct-image {
+  height: 10rem;
+  width: 13rem;
+  float: left;
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.CartProduct-info {
+  height: 12rem;
+  float: left;
+  text-align: left;
+}
+
+.CartProduct-name {
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.CartProduct-price {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.fa-times-cartProduct {
+  position: absolute;
+  right: 1.5rem;
+  top: -1rem;
+}

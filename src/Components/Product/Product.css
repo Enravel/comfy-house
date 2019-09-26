@@ -1,0 +1,74 @@
+.Product {
+  height: 28rem;
+  width: 28rem;
+  position: relative;
+  margin: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 2rem rgba(41, 41, 41, 0.3);
+  border: 2px solid rgba(41, 41, 41, 0.2);
+}
+
+.Product-image {
+  height: 19rem;
+  width: 28rem;
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+
+.Product-image-container {
+  height: 19rem;
+  width: 28rem;
+  overflow: hidden;
+
+  border-bottom: 1px solid rgba(41, 41, 41, 0.2);
+}
+
+.Product-image-container:hover .Product-button {
+  transform: translateX(0);
+}
+
+.Product-image-container:hover .Product-image {
+  transform: scale(1.1);
+}
+
+.Product-button {
+  position: absolute;
+  top: 47%;
+  left: 45%;
+  transition: transform 0.3s ease-out, color 0.3s ease-out;
+  cursor: pointer;
+  transform: translateX(100%);
+
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  color: rgb(41, 41, 41);
+  background-color: darkcyan;
+  text-shadow: 1px 1px 1px rgba(228, 228, 228, 0.2);
+}
+
+.Product-button:hover {
+  color: rgb(228, 228, 228);
+  text-shadow: 1px 1px 1px rgba(41, 41, 41, 0.2);
+}
+
+.Product-name {
+  margin-top: 1rem;
+  font-size: 2rem;
+
+  text-shadow: 1px 1px 1px rgba(41, 41, 41, 0.1);
+}
+
+.Product-price {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: darkcyan;
+
+  text-shadow: 1px 1px 1px rgba(41, 41, 41, 0.3);
+}
+
+.fa-shopping-cart {
+  font-size: 1.5rem;
+  margin: 0 1rem 0 0;
+}

@@ -1,0 +1,34 @@
+.Navbar {
+  display: flex;
+  justify-content: space-evenly;
+
+  position: fixed;
+
+  line-height: 5.5rem;
+  width: 100%;
+  height: 6rem;
+  background-color: rgb(228, 228, 228);
+
+  z-index: 1000;
+}
+
+.fas {
+  margin-top: 1.8rem;
+  font-size: 2.5rem;
+
+  cursor: pointer;
+}
+
+.main-header {
+  font-size: 2.4rem;
+  letter-spacing: .7rem;
+  cursor: pointer;
+}
+
+.comfy {
+  
+}
+
+.house {
+  color: darkcyan;
+}

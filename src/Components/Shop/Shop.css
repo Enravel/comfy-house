@@ -1,0 +1,17 @@
+.Shop {
+  margin-bottom: 12.5rem;
+}
+
+.Shop-header {
+  margin: 7rem 0;
+  font-size: 3.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.Shop-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 75%;
+  margin: auto;
+}
