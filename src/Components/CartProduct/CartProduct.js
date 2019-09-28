@@ -10,20 +10,31 @@ class CartProduct extends Component {
 
   handleClick() {
     this.props.removeItem(this.props.itemToBeRemoved);
-    this.props.calculateTotal();
   }
 
   render() {
+    const { info } = this.props;
     return (
       <div className="CartProduct">
-        <img
-          className="CartProduct-image"
-          src={this.props.image}
-          alt={this.props.name}
-        />
+        <div className="CartProduct-image-container">
+          <img className="CartProduct-image" src={info.image} alt={info.name} />
+          <div className="CartProduct-quantity">
+            <i
+              class="fas fa-angle-up quantity-arrows"
+              onClick={() => this.props.incrementQuantity(info)}
+            ></i>
+            <p className="CartProduct-quantity-number">{info.quantity}</p>
+            <i
+              class="fas fa-angle-down quantity-arrows"
+              onClick={() => this.props.decrementQuantity(info)}
+            ></i>
+          </div>
+        </div>
         <div className="CartProduct-info">
-          <p className="CartProduct-name">{this.props.name}</p>
-          <p className="CartProduct-price">Price: ${this.props.price}</p>
+          <p className="CartProduct-name">{info.name}</p>
+          <p className="CartProduct-price">
+            Price: ${info.price * info.quantity}
+          </p>
         </div>
 
         <i
@@ -31,6 +42,7 @@ class CartProduct extends Component {
           onClick={this.handleClick}
         ></i>
       </div>
+      // mislim da ovde ne treba komentari
     );
   }
 }

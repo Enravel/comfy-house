@@ -12,42 +12,50 @@ const database = {
     {
       name: 'Couch',
       price: 120,
-      image: couch
+      image: couch,
+      quantity: 1
     },
     {
       name: 'Table',
       price: 50,
-      image: table
+      image: table,
+      quantity: 1
     },
     {
       name: 'Queen Panel Bed',
       price: 210,
-      image: queenPanelBed
+      image: queenPanelBed,
+      quantity: 1
     },
     {
       name: 'Black Couch',
       price: 125,
-      image: blackCouch
+      image: blackCouch,
+      quantity: 1
     },
     {
       name: 'Single Panel Bed',
       price: 90,
-      image: singlePanelBed
+      image: singlePanelBed,
+      quantity: 1
     },
     {
       name: 'Twin Panel Bed',
       price: 145,
-      image: twinPanelBed
+      image: twinPanelBed,
+      quantity: 1
     },
     {
       name: 'Dresser',
       price: 60,
-      image: Dresser
+      image: Dresser,
+      quantity: 1
     },
     {
       name: 'King Panel Bed',
       price: 100,
-      image: kingPanelBed
+      image: kingPanelBed,
+      quantity: 1
     }
   ]
 };

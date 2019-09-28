@@ -10,7 +10,6 @@ class Product extends Component {
 
   handleClick() {
     this.props.handleClick(this.props.shopObject);
-    this.props.calculateTotal();
     this.props.openCartOnClick();
   }
 
@@ -20,19 +19,19 @@ class Product extends Component {
         <div className="Product-image-container">
           <img
             className="Product-image"
-            src={this.props.image}
-            alt={this.props.name}
+            src={this.props.info.image}
+            alt={this.props.info.name}
           />
 
           <button className="Product-button" onClick={this.handleClick}>
-            <i class="fas fa-shopping-cart"></i>
+            <i class="fa fa-shopping-cart"></i>
             ADD TO CART
           </button>
         </div>
 
-        <p className="Product-name">{this.props.name}</p>
+        <p className="Product-name">{this.props.info.name}</p>
 
-        <p className="Product-price">${this.props.price}</p>
+        <p className="Product-price">${this.props.info.price}</p>
       </div>
     );
   }

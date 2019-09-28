@@ -12,7 +12,11 @@ class Navbar extends Component {
           <span className="main-header house">House</span>
         </h1>
 
-        <i className="fas fa-cart-plus" onClick={this.props.handleClick}></i>
+        <i className="fas fa-cart-plus" onClick={this.props.handleClick}>
+          {this.props.itemsInCart > 0 && (
+            <div className="products-number">{this.props.itemsInCart}</div>
+          )}
+        </i>
       </div>
     );
   }

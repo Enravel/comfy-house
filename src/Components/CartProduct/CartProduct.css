@@ -13,11 +13,77 @@
   background-color: rgb(211, 211, 211);
 }
 
+.CartProduct-image-container {
+  float: left;
+  position: relative;
+  height: 10rem;
+  width: 13rem;
+  overflow: hidden;
+}
+
+.CartProduct-image-container:hover .CartProduct-quantity-number {
+  opacity: 1;
+  color: darkcyan;
+}
+.CartProduct-image-container:hover .quantity-arrows {
+  opacity: 1;
+}
+.CartProduct-image-container:hover .CartProduct-image {
+  transform: scale(1.1);
+}
+
 .CartProduct-image {
   height: 10rem;
   width: 13rem;
   float: left;
   border: 1px solid rgb(196, 196, 196);
+  transition: transform 0.4s ease-out;
+}
+
+.CartProduct-quantity {
+  position: absolute;
+  width: 3rem;
+  height: 7rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.CartProduct-quantity-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(211, 211, 211);
+  text-shadow: 2px 0 0 rgb(31, 31, 31), -2px 0 0 rgb(31, 31, 31),
+    0 2px 0 rgb(31, 31, 31), 0 -2px 0 rgb(31, 31, 31), 1px 1px rgb(31, 31, 31),
+    -1px -1px 0 rgb(31, 31, 31), 1px -1px 0 rgb(31, 31, 31),
+    -1px 1px 0 rgb(31, 31, 31);
+  font-size: 3rem;
+  width: 5.5rem;
+  height: 4rem;
+  opacity: 0.7;
+  user-select: none;
+  transition: opacity 0.4s ease-out, color 0.4s ease-out;
+}
+.quantity-arrows {
+  margin-top: 0;
+  font-size: 4rem;
+  color: darkcyan;
+  text-shadow: 2px 0 0 rgb(31, 31, 31), -2px 0 0 rgb(31, 31, 31),
+    0 2px 0 rgb(31, 31, 31), 0 -2px 0 rgb(31, 31, 31), 1px 1px rgb(31, 31, 31),
+    -1px -1px 0 rgb(31, 31, 31), 1px -1px 0 rgb(31, 31, 31),
+    -1px 1px 0 rgb(31, 31, 31);
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+.fa-angle-up {
+  margin-top: -1rem;
+}
+
+.fa-angle-down {
+  margin-top: 1.5rem;
 }
 
 .CartProduct-info {
@@ -41,4 +107,14 @@
   position: absolute;
   right: 1.5rem;
   top: -1rem;
+}
+
+input[type='number'] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
