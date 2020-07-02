@@ -20,12 +20,12 @@ class CartProduct extends Component {
           <img className="CartProduct-image" src={info.image} alt={info.name} />
           <div className="CartProduct-quantity">
             <i
-              class="fas fa-angle-up quantity-arrows"
+              className="fas fa-angle-up quantity-arrows"
               onClick={() => this.props.incrementQuantity(info)}
             ></i>
             <p className="CartProduct-quantity-number">{info.quantity}</p>
             <i
-              class="fas fa-angle-down quantity-arrows"
+              className="fas fa-angle-down quantity-arrows"
               onClick={() => this.props.decrementQuantity(info)}
             ></i>
           </div>

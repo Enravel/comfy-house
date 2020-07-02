@@ -24,7 +24,7 @@ class Product extends Component {
           />
 
           <button className="Product-button" onClick={this.handleClick}>
-            <i class="fa fa-shopping-cart"></i>
+            <i className="fa fa-shopping-cart"></i>
             ADD TO CART
           </button>
         </div>

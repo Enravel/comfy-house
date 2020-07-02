@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Product from '../Product/Product';
 
-// importing css
 import './Shop.css';
+
+import { v4 as uuid } from 'uuid';
 
 class Shop extends Component {
   render() {
@@ -15,6 +16,7 @@ class Shop extends Component {
           {this.props.products.map((item, index) => {
             return (
               <Product
+                key={uuid()}
                 info={item}
                 handleClick={handleClick}
                 openCartOnClick={openCartOnClick}
