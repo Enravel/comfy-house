@@ -1,4 +1,18 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## IMPORTANT
+
+This project doesn't work with newer versions of node.
+
+To run this project: <br>
+
+- Download nvm from [here](https://github.com/coreybutler/nvm-windows/releases).
+  - Click on <b>nvm-setup.exe</b> and install it.
+- Run `nvm install 16`.
+- Run `nvm use 16`.
+- Then run `npm start`.
+
+To revert back to your original node version just run `nvm use -your version-`.
+
+<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -66,4 +80,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-"# comfy-house" 
+"# comfy-house"  -->
